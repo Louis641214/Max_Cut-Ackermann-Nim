@@ -3,7 +3,9 @@ name = "problem_set_2"
 version = "1.0.0"
 description = "Max-Cut / Ackermann function / Nim game"
 authors = [{ name = "Louis641214" }]
-dependencies = []
+dependencies = [
+    "matplotlib>=3.10"
+]
 
 [build-system]
 requires = ["setuptools"]
