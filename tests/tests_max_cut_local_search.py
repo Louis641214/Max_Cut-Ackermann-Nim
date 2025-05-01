@@ -1,18 +1,18 @@
 from src.basic_class import Vertex, Graph 
-from src.Max_Cut_Greedy import max_cut_greedy
+from src.Max_Cut_local_search import max_cut_local_search
 
-def test_max_cut_greedy():
+def test_max_cut_local_search():
 
     g = Graph[str]()
     a, b, c, d = Vertex("A"), Vertex("B"), Vertex("C"), Vertex("D")
     
-    g.add_edge(a, b, 1.0)
-    g.add_edge(b, c, 2.0)
-    g.add_edge(c, d, 3.0)
-    g.add_edge(d, a, 4.0)
-    g.add_edge(a, c, 1.5)
+    g.add_edge(a, b, 3.0)
+    g.add_edge(b, c, 1.0)
+    g.add_edge(b, d, 4.0)
+    g.add_edge(d, c, 5.0)
+    g.add_edge(a, c, 2.0)
 
-    partition, cut_value = max_cut_greedy(g)
+    partition, cut_value = max_cut_local_search(g)
 
 
     print("Partition:")
@@ -26,4 +26,4 @@ def test_max_cut_greedy():
 # Main
 # ================================
 
-test_max_cut_greedy()
+test_max_cut_local_search()

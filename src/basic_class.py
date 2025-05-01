@@ -27,7 +27,7 @@ class Graph(Generic[T]):
         if u not in self.vertices:
             self.vertices.append(u)
         if v not in self.vertices:
-            self.vertices+=[v]
+            self.vertices.append(v)
         self.edges.append((u, v, weight))
 
 
