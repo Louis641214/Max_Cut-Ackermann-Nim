@@ -1,4 +1,4 @@
-## Problem Set 2
+## Max_Cut-Ackermann-Nim
 This project contains implementations of three algorithmic problems in Python:
 
     - A local search algorithm for the Max-Cut problem 
@@ -11,18 +11,17 @@ These problems were developed and tested as part of Discrete Mathematics course.
 ## Installation
 Make sure you have Python 3.10+ installed. Then, clone the repository and install the project in editable mode with:
 
-```bash 
-pip install -e .
+```bash
+git clone https://github.com/Louis641214/Max_Cut-Ackermann-Nim.git
+cd Max_Cut-Ackermann-Nim
+
+uv venv
+source .venv/bin/activate
+
+uv pip install -e .
 ```
 
 This allows you to make changes in the source code without reinstalling the package.
-
-
-## Requirements
-To install the packages, you can run:
-```bash
-pip install -r requirements.txt
-```
 
 
 ## Usage

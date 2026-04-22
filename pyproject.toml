@@ -1,5 +1,5 @@
 [project]
-name = "problem_set_2"
+name = "Max_Cut-Ackermann-Nim"
 version = "1.0.0"
 description = "Max-Cut Problem / Ackermann function / Nim game"
 authors = [{ name = "Louis641214" }]
